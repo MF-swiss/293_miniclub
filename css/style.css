@@ -1,3 +1,18 @@
+/* CSS für Miniseite SQ 4A*/
+
+/* ------------------------------------
+   BODY SECTION
+------------------------------------ */
+body {
+  font-family: 'Atlanta', sans-serif;
+  margin: 0 10%;
+  padding: 0;
+  background-color: #dcdcdcbf;
+  color: #1d1d1d;
+  display: flex;
+}
+
+
 /* ------------------------------------
    HERO SECTION
 ------------------------------------ */
@@ -37,21 +52,12 @@
 
 .hero-banner {
   width: 100%;
-  height: auto;
   overflow: hidden;
 }
 
 .hero-banner img {
   width: 100%;
-  height: auto;
   display: block;
-}
-
-.hero-text {
-  margin-top: 8px;
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 
@@ -84,13 +90,54 @@
 
 .main-nav a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
 }
 
 /* ------------------------------------
    aside
 ------------------------------------ */
+aside {
+  background-color: #4a4a4a;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
 
+.aside-title {
+  margin: 0 0 16px 0;
+}
+
+.aside-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.aside-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.aside-card h3 {
+  margin-top: 0;
+}
+
+.aside-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .aside-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .aside-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
