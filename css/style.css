@@ -27,22 +27,22 @@ body {
   z-index: 20;
   display: flex;
   align-items: center; /* Logo + Text nebeneinander */
-  gap: 15px; /* Abstand zwischen Logo und Text */
+  gap: 20px; /* Abstand zwischen Logo und Text */
 }
 
 
 .hero-logo h1 {
   color: rgb(0, 0, 0);
   font-size: 1.6rem;
-  margin-top: 10px;
-  max-width: 400px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  margin-top: 20px;
+  max-width: flex;
+  text-shadow: 5px 10px 3px rgba(0,0,0,0.6);
 
 }
 
 
 .hero-logo a {
-  display: block;
+  display: inline-block;
 }
 
 .hero-logo img {
@@ -67,6 +67,8 @@ body {
 .main-nav {
   background: rgba(41, 41, 41, 0.95);
   padding: 15px 0;
+  position: sticky;
+  top: 5px;
 }
 
 .main-nav ul {
@@ -104,7 +106,7 @@ aside {
 
 .aside-title {
   margin: 0 0 20px 0;
-  text-decoration: underline wavy;
+  text-decoration: underline;
   text-decoration-thickness: 4px;
   text-decoration-color: black;
   
@@ -162,3 +164,10 @@ aside {
 /* ------------------------------------
    footer
 ------------------------------------ */
+footer {
+  background-color: #898989a1;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
