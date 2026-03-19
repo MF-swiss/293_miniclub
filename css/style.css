@@ -138,7 +138,7 @@ aside {
 }
 
 .aside-card p {
-  margin-bottom: 0;
+  margin: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -167,9 +167,52 @@ aside {
 ------------------------------------ */
 
 .article-image {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin-bottom: 15px;
+  inline-size: auto;
+}
+
+.article-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: minmax(200px, 38%) 1fr;
+  align-items: start;
+  gap: 20px;
+  background: rgba(128, 128, 128, 0.654);
+}
+
+.article-grid .article-image {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 100%;
+  margin: 20px;
+}
+
+.article-grid h2,
+.article-grid p,
+.article-grid ul {
+  grid-column: 2;
+  margin: 20px;
+  margin-right: 70px;
+}
+
+@media (max-width: 700px) {
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-grid .article-image,
+  .article-grid h2,
+  .article-grid p,
+  .article-grid ul {
+    grid-column: 1;
+    grid-row: auto;
+  }
 }
 
 /* ------------------------------------
