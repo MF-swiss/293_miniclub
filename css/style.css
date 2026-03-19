@@ -1,11 +1,19 @@
 /* CSS für Miniseite SQ 4A*/
 
+#wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 10%;
+}
+
+
 /* ------------------------------------
    BODY SECTION
 ------------------------------------ */
 body {
   font-family: 'Atlanta', sans-serif;
-  margin: 0 10%;
+  margin: 0 0%;
   padding: 0;
   background-color: #dcdcdcbf;
   color: #1d1d1d;
@@ -158,8 +166,11 @@ aside {
    article
 ------------------------------------ */
 
-
-
+.article-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
 
 /* ------------------------------------
    footer
