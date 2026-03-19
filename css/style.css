@@ -183,7 +183,14 @@ aside {
   grid-template-columns: minmax(200px, 38%) 1fr;
   align-items: start;
   gap: 20px;
-  background: rgba(128, 128, 128, 0.654);
+  background: gray;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.article-image {
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .article-grid .article-image {
@@ -212,6 +219,7 @@ aside {
   .article-grid ul {
     grid-column: 1;
     grid-row: auto;
+    gap: 10px;
   }
 }
 
