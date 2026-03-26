@@ -229,13 +229,15 @@ aside {
 ------------------------------------ */
 table.price-table {
   width: 70%;
-  margin: auto;
-  border-collapse: collapse;
-  margin-top: 20px;
+  margin: 0 auto;
+  border-collapse: separate;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #ff910078;
 }
 
 table.price-table th {
-  border: 2px solid  #ccc;
+  border: 10px solid  #ccc;
   padding: 14px;
   background-color: #000000b4;
   color: rgb(32, 135, 254);
@@ -243,7 +245,7 @@ table.price-table th {
 
 table.price-table td {
   background-color: rgba(74, 74, 74, 0.699);
-  border: 1px solid #ccc;
+  border: 5px solid #ccc;
   padding: 12px;
   color: rgb(111, 0, 0);
 }
