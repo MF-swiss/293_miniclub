@@ -259,6 +259,36 @@ tfoot {
 }
 
 /* ------------------------------------
+   form styling
+------------------------------------ */
+form {
+  background-color: #00249a;
+  color: rgb(255, 255, 255);
+  padding: 40px;
+  margin-top: 20px;
+  outline: 2px solid #000000;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+fieldset {
+  border: 2px solid #c1c1c1;
+}
+button {
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: #dedede;
+  color: #0008ff;
+  border-radius: 50px;
+  padding: 20px 50px;
+  scroll-padding: flex;
+  cursor: pointer;
+  font-weight: center;
+}
+
+/* ------------------------------------
    footer
 ------------------------------------ */
 footer {
