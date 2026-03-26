@@ -37,6 +37,50 @@
 			<section>
 				<h1>Willkommen auf der Memberseite</h1>
 				<h2>Anmeldung zum Sommerfest</h2>
+				<form action="#" method="post">
+					<fieldset>
+						<legend>Koordinaten:</legend>
+
+						<label for="vorname">Vorname(*)</label>
+						<input type="text" id="vorname" name="vorname" required />
+
+						<label for="nachname">Nachname(*)</label>
+						<input type="text" id="nachname" name="nachname" required />
+
+						<label for="adresse">Adresse</label>
+						<input type="text" id="adresse" name="adresse" required />
+
+						<label for="email">e-mail(*)</label>
+						<input type="email" id="email" name="email" required />
+						<p class="hinweis">* Pflichtfelder</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Anmeldung zum Sommerfest:</legend>
+
+						<a>Ich bin dabei: <em>(verbindlich)</em></a>
+						<a>Ja
+						<input type="checkbox" id="ja" name="ja" value="ja" required />
+						</a>
+						<a>Nein
+						<input type="checkbox" id="nein" name="nein" value="nein" required />
+						</a>
+
+						<label for="anzahl">Anzahl Personen</label>
+						<select id="anzahl" name="anzahl">
+							<option value="1">1 Person</option>
+							<option value="2">2 Personen</option>
+							<option value="3">3 Personen</option>
+							<option value="4">4 Personen</option>
+						</select>
+
+						<label for="bemerkung">Bemerkungen</label>
+						<textarea id="bemerkung" name="bemerkung" rows="5" cols="40" placeholder="Allergien, Wünsche, Fragen..."></textarea>
+					</fieldset>
+
+					<button type="submit">Anmeldung senden</button>
+					<button type="reset">Zurücksetzen</button>
+				</form>
 		    </section>
 		    <div class="cllfix"></div> 
 
